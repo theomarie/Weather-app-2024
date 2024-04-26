@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  weatherAppSwiftUi
+//  weatherAppDemo
 //
 //  Created by Theo Marie on 26/04/2024.
 //
