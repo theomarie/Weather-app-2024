@@ -15,6 +15,9 @@
 		24E9B5922BDC026800F70E47 /* weatherAppDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9B5912BDC026800F70E47 /* weatherAppDemoUITests.swift */; };
 		24E9B5942BDC026800F70E47 /* weatherAppDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9B5932BDC026800F70E47 /* weatherAppDemoUITestsLaunchTests.swift */; };
 		24E9B5A22BDC039100F70E47 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9B5A12BDC039100F70E47 /* LocationManager.swift */; };
+		24E9B5A52BDDAA4100F70E47 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9B5A42BDDAA4100F70E47 /* WelcomeView.swift */; };
+		24E9B5A72BDDADF400F70E47 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9B5A62BDDADF400F70E47 /* LoadingView.swift */; };
+		24E9B5A92BDDB0F600F70E47 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E9B5A82BDDB0F600F70E47 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		24E9B5912BDC026800F70E47 /* weatherAppDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherAppDemoUITests.swift; sourceTree = "<group>"; };
 		24E9B5932BDC026800F70E47 /* weatherAppDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherAppDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24E9B5A12BDC039100F70E47 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		24E9B5A42BDDAA4100F70E47 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		24E9B5A62BDDADF400F70E47 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		24E9B5A82BDDB0F600F70E47 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +102,9 @@
 		24E9B5752BDC026700F70E47 /* weatherAppDemo */ = {
 			isa = PBXGroup;
 			children = (
+				24E9B5A32BDC07F100F70E47 /* Views */,
 				24E9B5A02BDC037C00F70E47 /* Manager */,
 				24E9B5762BDC026700F70E47 /* weatherAppDemoApp.swift */,
-				24E9B5782BDC026700F70E47 /* ContentView.swift */,
 				24E9B57A2BDC026800F70E47 /* Assets.xcassets */,
 				24E9B57C2BDC026800F70E47 /* Preview Content */,
 			);
@@ -134,8 +140,19 @@
 			isa = PBXGroup;
 			children = (
 				24E9B5A12BDC039100F70E47 /* LocationManager.swift */,
+				24E9B5A82BDDB0F600F70E47 /* WeatherManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		24E9B5A32BDC07F100F70E47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24E9B5782BDC026700F70E47 /* ContentView.swift */,
+				24E9B5A42BDDAA4100F70E47 /* WelcomeView.swift */,
+				24E9B5A62BDDADF400F70E47 /* LoadingView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E9B5A92BDDB0F600F70E47 /* WeatherManager.swift in Sources */,
 				24E9B5792BDC026700F70E47 /* ContentView.swift in Sources */,
 				24E9B5772BDC026700F70E47 /* weatherAppDemoApp.swift in Sources */,
 				24E9B5A22BDC039100F70E47 /* LocationManager.swift in Sources */,
+				24E9B5A72BDDADF400F70E47 /* LoadingView.swift in Sources */,
+				24E9B5A52BDDAA4100F70E47 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -416,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -444,6 +464,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +496,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
